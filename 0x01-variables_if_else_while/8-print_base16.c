@@ -13,7 +13,7 @@ int main(void)
 	int c;
 	char alphahex;
 
-	for (c = 48; c <= 58; c++)
+	for (c = 48; c < 58; c++)
 	{putchar(c); }
 	for (alphahex = 'a'; alphahex <= 'f'; alphahex++)
 	{putchar(alphahex); }
