@@ -9,9 +9,13 @@
 
 int main(void)
 {
-	char str[] = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
+	char alpha = 'a';
 
-	putchar(str);
+	while (alpha <= 'z')
+	{
+	if (alpha != 'e' && alpha != 'q')
+	{putchar(alpha); }
+	alpha++; }
 	putchar('\n');
 	return (0);
 }
