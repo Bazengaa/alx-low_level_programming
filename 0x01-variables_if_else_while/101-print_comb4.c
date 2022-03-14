@@ -21,8 +21,11 @@ int main(void)
 					putchar(i);
 					putchar(j);
 					putchar(k);
-					putchar(',');
-					putchar(' ');
+					if (i != 55 || j != 56 || k != 57)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
