@@ -1,11 +1,9 @@
 #include "main.h"
 /**
-* _isalpha - Entry point
-*
-*
-* this program checks if letter is alphabetic
-*
-**/
+ * _isalpha - a function that checks for alphabet character
+ * @c: single letter input
+ * Return: 1 if int c is lowercase or uppercase, 0 if otherwise
+ */
 int _isalpha(int c)
 {
 	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
