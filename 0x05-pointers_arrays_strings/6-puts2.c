@@ -12,7 +12,7 @@ void puts2(char *str)
 {
 	while (*str)
 	{
-		if (*str > '\0')
+		if (*str == '\0')
 		{
 			break;
 		}
