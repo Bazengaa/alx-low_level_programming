@@ -1,45 +1,37 @@
 #include "main.h"
 /**
+* cap_string - Entry point and function name
 *
+* @str: variable name
 *
+* this function capitalizes all words
 *
+* Return: char
 **/
-char *cap_string(char *str)
+char *cap_string(char *n)
 {
-	int i;
+	int i, x;
+	int cap = 32;
+	int separators[] = {',', ';', '.', '?', '"',
+		 '(', ')', '{', '}', ' ', '\n', '\t'};
 
-	for(i=0; str[i]!='\0'; i++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		if(i==0)
+		if (n[i] >= 'a' && n[i] <= 'z')
 		{
-			if((str[i]>='a' && str[i]<='z'))
+			n[i] = n[i] - cap;
+		}
 
-				str[i]=str[i]-32;
-				continue;
-		}
-		if(str[i] == ' ' || str[i] == '.' || str[i] == '-' || str[i] == '\t' || str[i] == '\n')
+		cap = 0;
+
+		for (x = 0; x <= 12; x++)
 		{
-			++i;
-			if(str[i]>='a' && str[i]<='z')
+			if (n[i] == separators[x])
 			{
-				str[i]=str[i]-32;
-				continue;
+				x = 12;
+				cap = 32;
 			}
 		}
-		if(str[i]=='\n')
-		{
-			++i;
-			if(str[i]>='a' && str[i]<='z')
-			{
-				str[i]=str[i]-32;
-				continue;
-			}
-		}
-		/**else
-		{
-			if(str[i]>='A' && str[i]<='Z')
-				str[i]=str[i]+32;
-		}**/
 	}
-	return (str);
+	return (n);
 }
