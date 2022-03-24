@@ -2,7 +2,7 @@
 /**
 * cap_string - Entry point and function name
 *
-* @str: variable name
+* @n: variable name
 *
 * this function capitalizes all words
 *
