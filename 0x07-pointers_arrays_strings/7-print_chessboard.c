@@ -3,7 +3,6 @@
 * print_chessboard - Entry point & function name
 *
 * @a: pointer name
-* @8: Array
 *
 * This function prints a chessboard
 *
