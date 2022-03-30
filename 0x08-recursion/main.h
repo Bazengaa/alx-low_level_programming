@@ -8,6 +8,10 @@ int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int natural_sqrt_recursion(int n, int i);
-int _is_prime(int n, int i);
+int pnumber(int x, int n);
 int _putchar(char c);
+int is_palindrome(char *s);
+int find_strlen(char *s);
+int check_if_palindrome(char *s, int i, int len);
+
 #endif
