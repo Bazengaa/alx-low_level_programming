@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* int _sqrt_recursion - Entry point and function name
+* _sqrt_recursion - Entry point and function name
 *
 * @n: Variable name
 *
@@ -36,5 +36,3 @@ int natural_sqrt_recursion(int n, int i)
 	}
 	return (natural_sqrt_recursion(n, i + 1));
 }
-
-
