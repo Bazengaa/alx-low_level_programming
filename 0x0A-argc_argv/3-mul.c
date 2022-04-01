@@ -6,7 +6,7 @@
 * @argv: an array containing the program command line arguments
 * Return: 0 if runs
 */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int x, y;
 
