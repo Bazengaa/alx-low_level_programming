@@ -3,9 +3,9 @@
 /**
 * str_concat - Concatenates two strings
 *
-* @s1 - pointer name
+* @s1: - pointer name
 *
-* @s2 - pointer name
+* @s2: - pointer name
 *
 * Return: Null on failure
 *
